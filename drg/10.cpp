@@ -3,7 +3,7 @@
 #include<cctype>
 #include<vector>
 #include<algorithm>
-#include<limits>
+#include<climits>
 using namespace std;
 int main(void)
 {
@@ -42,8 +42,11 @@ int main(void)
                     r.push_back(L1.at(i));
 
     for(int i = 0; i < r.size(); i++)
+    {
         for(int j = 0; j < r.at(i).size(); j++)
             cout << r.at(i).at(j);
+        cout << endl;
+    }
 
     return 0;
 }
